@@ -41,7 +41,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://submissions.us-east-1.linodeobjects.com/metau_ios/O46afTal.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='/Users/andreagonz/Desktop/Codepath 2022/Flixter2/Andrea_Gonzalez_Flixter_Demo_AdobeExpress.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [Kap](https://getkap.co/).
 
