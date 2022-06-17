@@ -22,13 +22,10 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
     // Register cell classes
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
-    // Do any additional setup after loading the view.
+    // Do additional setup after loading the view.
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
     
@@ -49,11 +46,7 @@ static NSString * const reuseIdentifier = @"Cell";
                for(NSDictionary *movie in self.movies) {
                    NSLog(@"%@",  movie[@"title"]);
                }
-               // TODO: Get the array of movies
                
-               // TODO: Store the movies in a property to use elsewhere
-               
-               // TODO: Reload your table view data
                [self.collectionView reloadData];
            }
        }];
@@ -71,11 +64,6 @@ static NSString * const reuseIdentifier = @"Cell";
 */
 
 #pragma mark <UICollectionViewDataSource>
-
-//- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
- //   return self.movies.count;
-//}
-
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.movies.count;

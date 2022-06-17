@@ -14,8 +14,6 @@
 @interface MovieViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinningActivityIndicator;
-//@property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
-
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (nonatomic, strong) NSArray *movies;
@@ -41,7 +39,7 @@
     
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Cannot Get Movies" message:@"The Internet connection appears to be offline" preferredStyle:(UIAlertControllerStyleAlert)];
 
-    // create an Try action
+    // create a Try action
     UIAlertAction *tryAction = [UIAlertAction actionWithTitle:@"Try Again" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         // handle response here.
         [self.tableView reloadData];
@@ -69,9 +67,6 @@
                for(NSDictionary *movie in self.movies) {
                    NSLog(@"%@",  movie[@"title"]);
                }
-               // TODO: Get the array of movies
-            
-               // TODO: Store the movies in a property to use elsewhere
                
                // Start the activity indicator
                [self.spinningActivityIndicator startAnimating];
