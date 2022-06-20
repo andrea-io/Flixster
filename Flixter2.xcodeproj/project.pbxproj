@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1AA4BFAF81AF47886370DFB6 /* Pods_Flixter2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEB6C3F678CA20DD85D0289 /* Pods_Flixter2.framework */; };
 		6E83245B3FB03F7E0F0D9B08 /* Pods_Flixter2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35511A6A4038D53A7B343CD /* Pods_Flixter2Tests.framework */; };
+		BA6838582860F40B00E5B2F6 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6838572860F40B00E5B2F6 /* DetailsViewController.m */; };
 		BA9010AE285CE0930078B9A4 /* MovieCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9010AD285CE0930078B9A4 /* MovieCollectionViewCell.m */; };
 		BA9010B4285CE9450078B9A4 /* MovieCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9010B3285CE9450078B9A4 /* MovieCollectionViewController.m */; };
 		BA9010B7285D016F0078B9A4 /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9010B6285D016F0078B9A4 /* DetailTableViewCell.m */; };
@@ -23,7 +24,6 @@
 		BAF8CB08285BC41700659C35 /* Flixter2UITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF8CB07285BC41700659C35 /* Flixter2UITestsLaunchTests.m */; };
 		BAF8CB16285BC60100659C35 /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF8CB15285BC60100659C35 /* MovieViewController.m */; };
 		BAF8CB1C285C5B6300659C35 /* movieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF8CB1B285C5B6300659C35 /* movieCell.m */; };
-		BAF8CB1F285C680E00659C35 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF8CB1E285C680E00659C35 /* DetailsViewController.m */; };
 		C86F392306DE8FE6BFB3C2F2 /* Pods_Flixter2_Flixter2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 336336A3B73D45EE26AC4E70 /* Pods_Flixter2_Flixter2UITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +52,8 @@
 		4A0576DDF0C2A5179884B3D0 /* Pods-Flixter2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixter2Tests.release.xcconfig"; path = "Target Support Files/Pods-Flixter2Tests/Pods-Flixter2Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6C876FBC5F6057D870668DE9 /* Pods-Flixter2-Flixter2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixter2-Flixter2UITests.debug.xcconfig"; path = "Target Support Files/Pods-Flixter2-Flixter2UITests/Pods-Flixter2-Flixter2UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8759D2BFA074ADE3122C9D76 /* Pods-Flixter2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixter2.release.xcconfig"; path = "Target Support Files/Pods-Flixter2/Pods-Flixter2.release.xcconfig"; sourceTree = "<group>"; };
+		BA6838562860F40B00E5B2F6 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DetailsViewController.h; path = ../DetailsViewController.h; sourceTree = "<group>"; };
+		BA6838572860F40B00E5B2F6 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DetailsViewController.m; path = ../DetailsViewController.m; sourceTree = "<group>"; };
 		BA9010AC285CE0930078B9A4 /* MovieCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCollectionViewCell.h; sourceTree = "<group>"; };
 		BA9010AD285CE0930078B9A4 /* MovieCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCollectionViewCell.m; sourceTree = "<group>"; };
 		BA9010B2285CE9450078B9A4 /* MovieCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCollectionViewController.h; sourceTree = "<group>"; };
@@ -77,8 +79,6 @@
 		BAF8CB15285BC60100659C35 /* MovieViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
 		BAF8CB1A285C5B6300659C35 /* movieCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = movieCell.h; sourceTree = "<group>"; };
 		BAF8CB1B285C5B6300659C35 /* movieCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = movieCell.m; sourceTree = "<group>"; };
-		BAF8CB1D285C680E00659C35 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
-		BAF8CB1E285C680E00659C35 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		C35511A6A4038D53A7B343CD /* Pods_Flixter2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flixter2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCEB6C3F678CA20DD85D0289 /* Pods_Flixter2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flixter2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -160,8 +160,8 @@
 				BA9010AD285CE0930078B9A4 /* MovieCollectionViewCell.m */,
 				BAF8CB14285BC60100659C35 /* MovieViewController.h */,
 				BAF8CB15285BC60100659C35 /* MovieViewController.m */,
-				BAF8CB1D285C680E00659C35 /* DetailsViewController.h */,
-				BAF8CB1E285C680E00659C35 /* DetailsViewController.m */,
+				BA6838562860F40B00E5B2F6 /* DetailsViewController.h */,
+				BA6838572860F40B00E5B2F6 /* DetailsViewController.m */,
 				BAF8CAEB285BC41700659C35 /* Assets.xcassets */,
 				BAF8CAED285BC41700659C35 /* LaunchScreen.storyboard */,
 				BAF8CAF0285BC41700659C35 /* Info.plist */,
@@ -440,10 +440,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAF8CB16285BC60100659C35 /* MovieViewController.m in Sources */,
+				BA6838582860F40B00E5B2F6 /* DetailsViewController.m in Sources */,
 				BAF8CB1C285C5B6300659C35 /* movieCell.m in Sources */,
 				BAF8CAE1285BC41600659C35 /* AppDelegate.m in Sources */,
 				BA9010B7285D016F0078B9A4 /* DetailTableViewCell.m in Sources */,
-				BAF8CB1F285C680E00659C35 /* DetailsViewController.m in Sources */,
 				BA9010B4285CE9450078B9A4 /* MovieCollectionViewController.m in Sources */,
 				BAF8CAF2285BC41700659C35 /* main.m in Sources */,
 				BAF8CAE4285BC41600659C35 /* SceneDelegate.m in Sources */,

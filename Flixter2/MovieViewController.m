@@ -8,6 +8,8 @@
 #import "MovieViewController.h"
 #import "movieCell.h"
 #import "MovieCollectionViewCell.h"
+#import "DetailsViewController.h"
+#import "DetailTableViewCell.h"
 
 #import "UIImageView+AFNetworking.h"
 
@@ -26,6 +28,7 @@
     [super viewDidLoad];
     
     // Do any additional setup after loading the view.
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
 
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
@@ -82,15 +85,29 @@
     [task resume];
 }
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    if([segue.identifier isEqualToString:@"MovieSegue"]) {
+        movieCell *cell = sender;
+        NSIndexPath *myIndexPath = [self.tableView indexPathForCell:cell];
+        
+        NSDictionary *dataToPass = self.movies[myIndexPath.row];
+        DetailsViewController *detailVC = [segue destinationViewController];
+        detailVC.detailDict = dataToPass;
+    }
+    movieCell *cell = sender;
+    NSIndexPath *myIndexPath = [self.tableView indexPathForCell:cell];
+    
+    NSDictionary *dataToPass = self.movies[myIndexPath.row];
+    DetailsViewController *detailVC = [segue destinationViewController];
+    detailVC.detailDict = dataToPass;
 }
-*/
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.movies.count;
