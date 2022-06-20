@@ -42,12 +42,13 @@
     // create a Try action
     UIAlertAction *tryAction = [UIAlertAction actionWithTitle:@"Try Again" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         // handle response here.
+        // EO: What series of steps do we want to happen when a user hits 'Try Again'
         [self.tableView reloadData];
         }];
     // add the Try action to the alert controller
     [alert addAction:tryAction];
     
-    
+    // EO: Since all of the data fetching code is defined in the function beginRefresh (Line 126) you can simply call the function.
     NSURL *url = [NSURL URLWithString:@"https://api.themoviedb.org/3/movie/now_playing?api_key=89fb813e144f4dddab2bc0aa294b3ac7"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10.0];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:nil delegateQueue:[NSOperationQueue mainQueue]];
@@ -116,6 +117,9 @@
     return cell;
 }
 
+// EO: This function can be reused to avoid duplicating code e.g. at line 51
+// EO: Is it important that the refreshControl is passed into the function? What if you stored the refreshControl in a property and only referenced it in the function?
+
 // Makes a network request to get updated data
   // Updates the tableView with the new data
   // Hides the RefreshControl
@@ -134,6 +138,7 @@
         NSURLSessionDataTask *task = [session dataTaskWithRequest:request
                                                 completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
     
+        // EO: The data source has to be explicitly updated like you did in Line 62-66
            // ... Use the new data to update the data source ...
 
            // Reload the tableView now that there is new data
