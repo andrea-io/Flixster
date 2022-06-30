@@ -41,9 +41,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='/Users/andreagonz/Desktop/Codepath 2022/Flixter2/Andrea_Gonzalez_Flixter_Demo_AdobeExpress.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-GIF created with [Kap](https://getkap.co/).
+- [Imgur](https://imgur.com/5eau052)
 
 ## Notes
 
